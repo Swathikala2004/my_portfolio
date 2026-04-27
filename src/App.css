@@ -89,7 +89,6 @@ body {
   transition: 0.3s;
 }
 
-/* HERO BUTTON STYLES */
 .github {
   background: linear-gradient(45deg, #6366f1, #ec4899);
   color: white;
@@ -227,57 +226,71 @@ body {
   gap: 25px;
 }
 
+/* CARD */
 .card {
   background: #1e293b;
   padding: 20px;
   border-radius: 14px;
   transition: 0.3s;
-  min-height: 350px; /* 🔥 FIX HEIGHT ISSUE */
+  min-height: 350px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center; /* 🔥 center content */
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+  box-shadow: 0 15px 35px rgba(56, 189, 248, 0.4);
 }
 
+/* VIEW BUTTON */
 .view-btn {
-  margin-top: 10px;
-  padding: 8px 16px;
+  display: block;
+  margin: 15px auto;
+  padding: 6px 12px;
+  font-size: 13px;
   background: #38bdf8;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .view-btn:hover {
   background: white;
+  transform: scale(1.05);
 }
 
-/* ================= PROJECT BUTTONS ================= */
+/* BUTTON GROUP */
 .project-buttons {
   margin-top: 15px;
   display: flex;
   justify-content: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
+/* GITHUB BUTTON */
 .github-btn {
-  background: #0f172a;
+  background: #020617;
   color: white;
   border: 1px solid #334155;
+  padding: 8px 16px;
+  border-radius: 20px;
 }
 
 .github-btn:hover {
   background: #1e293b;
 }
 
+/* LIVE DEMO BUTTON */
 .live-btn {
   background: linear-gradient(45deg, #3b82f6, #6366f1);
   color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
 }
 
 .live-btn:hover {
