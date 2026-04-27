@@ -1,16 +1,43 @@
-# React + Vite
+# 🌐 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built using React to showcase my projects, skills, and contact details.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
+https://your-portfolio-link.com
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 👩‍💻 About Me
+Frontend Developer skilled in React and JavaScript with backend experience in Python and FastAPI.  
+I build responsive, scalable, and user-friendly web applications, including AI-based systems and full-stack projects.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- React.js
+- JavaScript
+- HTML, CSS
+- Node.js, Express.js
+- MongoDB
+- Python, FastAPI
+- PostgreSQL
+- LangGraph
+
+---
+
+## ✨ Features
+- Responsive UI design  
+- Projects showcase with modal view  
+- Skills section  
+- Contact section with GitHub & LinkedIn  
+- Smooth navigation  
+
+---
+
+## ⚙️ Run Locally
+
+Clone the repository:
+```bash
+git clone https://github.com/Swathikala2004/my_portfolio.git
