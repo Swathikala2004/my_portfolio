@@ -10,17 +10,22 @@ const projects = [
       "AI-powered CRM that converts natural language into structured HCP interaction data.",
     tech: ["React", "FastAPI", "LangGraph", "LLM"],
     github: "https://github.com/Swathikala2004/hcp-crm-ai",
-    live: "https://hcp-crm-ai.netlify.app",
+    live: "https://hcp-crm-ai.netlify.app", // ✅ ADDED
     image: crmImg,
     details: `
-🚀 Built an AI-First CRM System
+🚀 Built an AI-First CRM System for Healthcare Interactions
 
-• ChatGPT-style interface  
-• Converts text → structured data  
-• Auto-filled forms  
-• AI follow-ups  
+• Conversational chat interface (ChatGPT-style)
+• Converts natural language → structured CRM data
+• Auto-filled interaction forms
+• AI-suggested follow-up actions
+• Hybrid workflow (manual + AI)
 
-💻 Tech: React, FastAPI, LangGraph  
+💻 Tech Stack:
+React, FastAPI, LangGraph, Groq LLM, SQL
+
+🧠 Impact:
+Reduces manual data entry and improves productivity.
     `,
   },
 
@@ -29,17 +34,30 @@ const projects = [
     description:
       "Centralized system for managing device reservations without conflicts.",
     tech: ["React", "Python", "PostgreSQL"],
-    github: "https://github.com/Swathikala2004/device-booking-system",
-    live: "https://device-booking-system.netlify.app",
+    github:
+      "https://github.com/Swathikala2004/device-booking-system",
+    live: "https://device-booking-system.netlify.app", // ✅ ADDED
     image: bookingImg,
     details: `
-🚀 Device Booking System
+🚀 Internal Device Booking System
 
-• Conflict-free booking  
-• Timezone handling  
-• Admin controls  
+🔹 Problem:
+Shared devices caused scheduling conflicts across teams.
 
-💻 Tech: Python, PostgreSQL, React  
+🔹 Solution:
+Built centralized booking platform with timezone handling.
+
+⚙️ Features:
+• Conflict-free booking
+• Timezone (UTC) management
+• User booking limits
+• Admin controls
+
+💻 Tech Stack:
+Python, PostgreSQL, React
+
+🧠 Impact:
+Improved team efficiency and avoided booking clashes.
     `,
   },
 
@@ -47,18 +65,23 @@ const projects = [
     title: "Pipeline Builder (VectorShift)",
     description:
       "Dynamic pipeline builder with node-based UI and DAG validation.",
-    tech: ["React", "FastAPI"],
+    tech: ["React", "FastAPI", "Graph Algorithms"],
     github: "https://github.com/Swathikala2004/VectorShift",
-    live: "https://vectorshift1.netlify.app",
+    live: "https://vectorshift1.netlify.app", // ✅ ADDED
     image: vectorImg,
     details: `
-🚀 Pipeline Builder
+🚀 Pipeline Builder System
 
-• Drag & drop UI  
-• DAG validation  
-• Dynamic execution  
+• Drag-and-drop node-based UI
+• DAG validation system
+• Dynamic pipeline execution
+• Modular architecture
 
-💻 Tech: React, FastAPI  
+💻 Tech Stack:
+React, FastAPI
+
+🧠 Impact:
+Helps visualize and manage complex workflows efficiently.
     `,
   },
 
@@ -66,18 +89,23 @@ const projects = [
     title: "E-Commerce App",
     description:
       "Responsive shopping app with cart and product management.",
-    tech: ["React", "JavaScript", "CSS"],
+    tech: ["React", "JavaScript", "CSS", "HTML"],
     github: "https://github.com/Swathikala2004/ecommerce-react",
-    live: "https://e-commercapplication.netlify.app/",
+    live: "https://e-commercapplication.netlify.app/", // already there
     image: ecommerceImg,
     details: `
-🛒 E-Commerce App
+🛒 E-Commerce Web Application
 
-• Product listing  
-• Cart system  
-• Responsive UI  
+• Product listing & details
+• Add to cart functionality
+• State management using React
+• Responsive UI design
 
-💻 Tech: React, JS, CSS  
+💻 Tech Stack:
+React, JavaScript, HTML, CSS
+
+🧠 Impact:
+Improved understanding of UI design and state management.
     `,
   },
 ];

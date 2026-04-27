@@ -36,15 +36,27 @@ function Projects() {
                   View Project
                 </button>
 
-                {/* Links */}
-                <div className="links">
-                  <a href={p.github} target="_blank" rel="noreferrer">
-                    GitHub
-                  </a>
+                {/* 🔥 BUTTONS (UPDATED) */}
+                <div className="project-buttons">
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn github-btn"
+                    >
+                      GitHub
+                    </a>
+                  )}
 
                   {p.live && (
-                    <a href={p.live} target="_blank" rel="noreferrer">
-                      Live
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn live-btn"
+                    >
+                      Live Demo
                     </a>
                   )}
                 </div>
@@ -85,12 +97,13 @@ function Projects() {
             ))}
           </div>
 
-          {/* LINKS */}
-          <div className="links">
+          {/* 🔥 BUTTONS (UPDATED) */}
+          <div className="project-buttons">
             <a
               href={selectedProject.github}
               target="_blank"
               rel="noreferrer"
+              className="btn github-btn"
             >
               GitHub
             </a>
@@ -100,6 +113,7 @@ function Projects() {
                 href={selectedProject.live}
                 target="_blank"
                 rel="noreferrer"
+                className="btn live-btn"
               >
                 Live Demo
               </a>
