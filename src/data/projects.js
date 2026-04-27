@@ -10,21 +10,17 @@ const projects = [
       "AI-powered CRM that converts natural language into structured HCP interaction data.",
     tech: ["React", "FastAPI", "LangGraph", "LLM"],
     github: "https://github.com/Swathikala2004/hcp-crm-ai",
+    live: "https://hcp-crm-ai.netlify.app",
     image: crmImg,
     details: `
-🚀 Built an AI-First CRM System for Healthcare Interactions
+🚀 Built an AI-First CRM System
 
-• Conversational chat interface (ChatGPT-style)
-• Converts natural language → structured CRM data
-• Auto-filled interaction forms
-• AI-suggested follow-up actions
-• Hybrid workflow (manual + AI)
+• ChatGPT-style interface  
+• Converts text → structured data  
+• Auto-filled forms  
+• AI follow-ups  
 
-💻 Tech Stack:
-React, FastAPI, LangGraph, Groq LLM, SQL
-
-🧠 Impact:
-Reduces manual data entry and improves productivity.
+💻 Tech: React, FastAPI, LangGraph  
     `,
   },
 
@@ -33,29 +29,17 @@ Reduces manual data entry and improves productivity.
     description:
       "Centralized system for managing device reservations without conflicts.",
     tech: ["React", "Python", "PostgreSQL"],
-    github:
-      "https://github.com/Swathikala2004/device-booking-system",
+    github: "https://github.com/Swathikala2004/device-booking-system",
+    live: "https://device-booking-system.netlify.app",
     image: bookingImg,
     details: `
-🚀 Internal Device Booking System
+🚀 Device Booking System
 
-🔹 Problem:
-Shared devices caused scheduling conflicts across teams.
+• Conflict-free booking  
+• Timezone handling  
+• Admin controls  
 
-🔹 Solution:
-Built centralized booking platform with timezone handling.
-
-⚙️ Features:
-• Conflict-free booking
-• Timezone (UTC) management
-• User booking limits
-• Admin controls
-
-💻 Tech Stack:
-Python, PostgreSQL, React
-
-🧠 Impact:
-Improved team efficiency and avoided booking clashes.
+💻 Tech: Python, PostgreSQL, React  
     `,
   },
 
@@ -63,22 +47,18 @@ Improved team efficiency and avoided booking clashes.
     title: "Pipeline Builder (VectorShift)",
     description:
       "Dynamic pipeline builder with node-based UI and DAG validation.",
-    tech: ["React", "FastAPI", "Graph Algorithms"],
+    tech: ["React", "FastAPI"],
     github: "https://github.com/Swathikala2004/VectorShift",
+    live: "https://vectorshift1.netlify.app",
     image: vectorImg,
     details: `
-🚀 Pipeline Builder System
+🚀 Pipeline Builder
 
-• Drag-and-drop node-based UI
-• DAG validation system
-• Dynamic pipeline execution
-• Modular architecture
+• Drag & drop UI  
+• DAG validation  
+• Dynamic execution  
 
-💻 Tech Stack:
-React, FastAPI
-
-🧠 Impact:
-Helps visualize and manage complex workflows efficiently.
+💻 Tech: React, FastAPI  
     `,
   },
 
@@ -86,23 +66,18 @@ Helps visualize and manage complex workflows efficiently.
     title: "E-Commerce App",
     description:
       "Responsive shopping app with cart and product management.",
-    tech: ["React", "JavaScript", "CSS", "HTML"],
+    tech: ["React", "JavaScript", "CSS"],
     github: "https://github.com/Swathikala2004/ecommerce-react",
     live: "https://e-commercapplication.netlify.app/",
     image: ecommerceImg,
     details: `
-🛒 E-Commerce Web Application
+🛒 E-Commerce App
 
-• Product listing & details
-• Add to cart functionality
-• State management using React
-• Responsive UI design
+• Product listing  
+• Cart system  
+• Responsive UI  
 
-💻 Tech Stack:
-React, JavaScript, HTML, CSS
-
-🧠 Impact:
-Improved understanding of UI design and state management.
+💻 Tech: React, JS, CSS  
     `,
   },
 ];

@@ -6,8 +6,8 @@ function Projects() {
 
   return (
     <section id="projects" className="projects-section">
-      
-      {/* ================= LIST VIEW ================= */}
+
+      {/* ================= PROJECT LIST ================= */}
       {!selectedProject && (
         <>
           <h2>My Projects</h2>
@@ -15,7 +15,7 @@ function Projects() {
           <div className="projects-grid">
             {projects.map((p, index) => (
               <div key={index} className="card">
-                
+
                 <h3>{p.title}</h3>
                 <p>{p.description}</p>
 
@@ -48,25 +48,18 @@ function Projects() {
                     </a>
                   )}
                 </div>
+
               </div>
             ))}
           </div>
         </>
       )}
 
-      {/* ================= PROJECT DETAILS VIEW ================= */}
+      {/* ================= PROJECT DETAILS ================= */}
       {selectedProject && (
         <div className="project-detail">
-          
-          {/* 🔥 BACK BUTTON */}
-          <button
-            className="back-btn"
-            onClick={() => setSelectedProject(null)}
-          >
-            ⬅ Back
-          </button>
 
-          {/* Image */}
+          {/* IMAGE */}
           {selectedProject.image && (
             <img
               src={selectedProject.image}
@@ -75,15 +68,15 @@ function Projects() {
             />
           )}
 
-          {/* Title */}
+          {/* TITLE */}
           <h2>{selectedProject.title}</h2>
 
-          {/* Full Details */}
+          {/* DESCRIPTION */}
           <p style={{ whiteSpace: "pre-line" }}>
             {selectedProject.details}
           </p>
 
-          {/* Skills */}
+          {/* SKILLS */}
           <div className="tech-stack">
             {selectedProject.tech.map((skill, i) => (
               <span key={i} className="tech-btn">
@@ -92,7 +85,7 @@ function Projects() {
             ))}
           </div>
 
-          {/* Links */}
+          {/* LINKS */}
           <div className="links">
             <a
               href={selectedProject.github}
@@ -112,6 +105,15 @@ function Projects() {
               </a>
             )}
           </div>
+
+          {/* BACK BUTTON */}
+          <button
+            className="back-btn"
+            onClick={() => setSelectedProject(null)}
+          >
+            ⬅ Back
+          </button>
+
         </div>
       )}
     </section>
