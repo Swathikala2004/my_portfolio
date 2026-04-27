@@ -366,3 +366,33 @@ body {
     padding: 40px 20px;
   }
 }
+/* Back Button */
+.back-btn {
+  margin-bottom: 20px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: white;
+  transform: scale(1.05);
+}
+
+/* Project Detail */
+.project-detail {
+  padding: 40px;
+  text-align: center;
+}
+
+.detail-img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
