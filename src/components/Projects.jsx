@@ -1,25 +1,43 @@
 import { useState } from "react";
 import projects from "../data/projects";
 
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
+
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <section id="projects" className="projects-section">
-
-      {/* ================= PROJECT LIST ================= */}
+    <section
+      id="projects"
+      className="projects-section"
+      data-aos="fade-up"
+    >
       {!selectedProject && (
         <>
           <h2>My Projects</h2>
 
           <div className="projects-grid">
             {projects.map((p, index) => (
-              <div key={index} className="card">
+              <div
+                key={index}
+                className="card"
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
+              >
+                {p.image && (
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="project-img"
+                  />
+                )}
 
                 <h3>{p.title}</h3>
                 <p>{p.description}</p>
 
-                {/* Skills */}
                 <div className="tech-stack">
                   {p.tech.map((skill, i) => (
                     <span key={i} className="tech-btn">
@@ -28,7 +46,6 @@ function Projects() {
                   ))}
                 </div>
 
-                {/* View Button */}
                 <button
                   className="view-btn"
                   onClick={() => setSelectedProject(p)}
@@ -36,7 +53,6 @@ function Projects() {
                   View Project
                 </button>
 
-                {/* 🔥 BUTTONS (UPDATED) */}
                 <div className="project-buttons">
                   {p.github && (
                     <a
@@ -45,6 +61,7 @@ function Projects() {
                       rel="noreferrer"
                       className="btn github-btn"
                     >
+                      <FaGithub />
                       GitHub
                     </a>
                   )}
@@ -56,22 +73,19 @@ function Projects() {
                       rel="noreferrer"
                       className="btn live-btn"
                     >
+                      <FaExternalLinkAlt />
                       Live Demo
                     </a>
                   )}
                 </div>
-
               </div>
             ))}
           </div>
         </>
       )}
 
-      {/* ================= PROJECT DETAILS ================= */}
       {selectedProject && (
-        <div className="project-detail">
-
-          {/* IMAGE */}
+        <div className="project-detail" data-aos="fade-up">
           {selectedProject.image && (
             <img
               src={selectedProject.image}
@@ -80,15 +94,12 @@ function Projects() {
             />
           )}
 
-          {/* TITLE */}
           <h2>{selectedProject.title}</h2>
 
-          {/* DESCRIPTION */}
           <p style={{ whiteSpace: "pre-line" }}>
             {selectedProject.details}
           </p>
 
-          {/* SKILLS */}
           <div className="tech-stack">
             {selectedProject.tech.map((skill, i) => (
               <span key={i} className="tech-btn">
@@ -97,16 +108,18 @@ function Projects() {
             ))}
           </div>
 
-          {/* 🔥 BUTTONS (UPDATED) */}
           <div className="project-buttons">
-            <a
-              href={selectedProject.github}
-              target="_blank"
-              rel="noreferrer"
-              className="btn github-btn"
-            >
-              GitHub
-            </a>
+            {selectedProject.github && (
+              <a
+                href={selectedProject.github}
+                target="_blank"
+                rel="noreferrer"
+                className="btn github-btn"
+              >
+                <FaGithub />
+                GitHub
+              </a>
+            )}
 
             {selectedProject.live && (
               <a
@@ -115,19 +128,18 @@ function Projects() {
                 rel="noreferrer"
                 className="btn live-btn"
               >
+                <FaExternalLinkAlt />
                 Live Demo
               </a>
             )}
           </div>
 
-          {/* BACK BUTTON */}
           <button
             className="back-btn"
             onClick={() => setSelectedProject(null)}
           >
             ⬅ Back
           </button>
-
         </div>
       )}
     </section>

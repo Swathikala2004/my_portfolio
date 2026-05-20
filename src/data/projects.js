@@ -10,7 +10,7 @@ const projects = [
       "AI-powered CRM that converts natural language into structured HCP interaction data.",
     tech: ["React", "FastAPI", "LangGraph", "LLM"],
     github: "https://github.com/Swathikala2004/hcp-crm-ai",
-    live: "https://hcp-crm-ai.netlify.app", // ✅ ADDED
+    live: "https://hcp-crm-ai.netlify.app",
     image: crmImg,
     details: `
 🚀 Built an AI-First CRM System for Healthcare Interactions
@@ -33,17 +33,19 @@ Reduces manual data entry and improves productivity.
     title: "Device Booking System",
     description:
       "Centralized system for managing device reservations without conflicts.",
-    tech: ["React", "Python", "PostgreSQL"],
+    tech: ["React", "Python", "MongoDB", "Node.js" , "Express.js"],
     github:
       "https://github.com/Swathikala2004/device-booking-system",
-    live: "https://device-booking-system.netlify.app", // ✅ ADDED
+    live:
+      
+      "https://device-booking-system-7db1.vercel.app/",
     image: bookingImg,
     details: `
 🚀 Internal Device Booking System
 
 🔹 Problem:
 Shared devices caused scheduling conflicts across teams.
-
+c:\Users\eediga vinod kumar\OneDrive\Pictures\Screenshots\Booking1.png.pngc:\Users\eediga vinod kumar\OneDrive\Pictures\Screenshots\Booking1.png.png
 🔹 Solution:
 Built centralized booking platform with timezone handling.
 
@@ -54,7 +56,7 @@ Built centralized booking platform with timezone handling.
 • Admin controls
 
 💻 Tech Stack:
-Python, PostgreSQL, React
+  node.js,Express.js, MongoDB, React
 
 🧠 Impact:
 Improved team efficiency and avoided booking clashes.
@@ -67,7 +69,7 @@ Improved team efficiency and avoided booking clashes.
       "Dynamic pipeline builder with node-based UI and DAG validation.",
     tech: ["React", "FastAPI", "Graph Algorithms"],
     github: "https://github.com/Swathikala2004/VectorShift",
-    live: "https://vectorshift1.netlify.app", // ✅ ADDED
+    live: "https://vectorshift1.netlify.app",
     image: vectorImg,
     details: `
 🚀 Pipeline Builder System
@@ -91,7 +93,7 @@ Helps visualize and manage complex workflows efficiently.
       "Responsive shopping app with cart and product management.",
     tech: ["React", "JavaScript", "CSS", "HTML"],
     github: "https://github.com/Swathikala2004/ecommerce-react",
-    live: "https://e-commercapplication.netlify.app/", // already there
+    live: "https://e-commercapplication.netlify.app/",
     image: ecommerceImg,
     details: `
 🛒 E-Commerce Web Application

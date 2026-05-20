@@ -1,4 +1,3 @@
-/* ================= GLOBAL ================= */
 html {
   scroll-behavior: smooth;
 }
@@ -75,7 +74,6 @@ body {
   font-size: 16px;
 }
 
-/* HERO BUTTONS */
 .hero-buttons {
   margin-top: 20px;
 }
@@ -104,7 +102,6 @@ body {
   color: black;
 }
 
-/* HERO IMAGE */
 .hero-right {
   display: flex;
   justify-content: center;
@@ -135,8 +132,8 @@ body {
 }
 
 .about-container {
-  max-width: 800px;
-  width: 100%;
+  max-width: 900px;
+  margin: auto;
 }
 
 .about-title {
@@ -154,23 +151,50 @@ body {
 /* ================= SKILLS ================= */
 .skills-section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
 
 .skills-section h2 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  max-width: 800px;
+  gap: 16px;
+  max-width: 1050px;
   margin: auto;
 }
 
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
+  border-radius: 18px;
+  background: #1e293b;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background: #38bdf8;
+  color: black;
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+/* PROJECT TECH BUTTON */
 .tech-btn {
   padding: 6px 12px;
   border-radius: 20px;
@@ -226,18 +250,24 @@ body {
   gap: 25px;
 }
 
-/* CARD */
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
 .card {
   background: #1e293b;
   padding: 20px;
   border-radius: 14px;
   transition: 0.3s;
   min-height: 350px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center; /* 🔥 center content */
+  align-items: center;
 }
 
 .card:hover {
@@ -245,7 +275,6 @@ body {
   box-shadow: 0 15px 35px rgba(56, 189, 248, 0.4);
 }
 
-/* VIEW BUTTON */
 .view-btn {
   display: block;
   margin: 15px auto;
@@ -263,7 +292,6 @@ body {
   transform: scale(1.05);
 }
 
-/* BUTTON GROUP */
 .project-buttons {
   margin-top: 15px;
   display: flex;
@@ -272,7 +300,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* GITHUB BUTTON */
 .github-btn {
   background: #020617;
   color: white;
@@ -285,7 +312,6 @@ body {
   background: #1e293b;
 }
 
-/* LIVE DEMO BUTTON */
 .live-btn {
   background: linear-gradient(45deg, #3b82f6, #6366f1);
   color: white;
@@ -298,7 +324,6 @@ body {
   box-shadow: 0 0 12px rgba(99, 102, 241, 0.6);
 }
 
-/* ================= PROJECT DETAIL ================= */
 .project-detail {
   padding: 40px;
   text-align: center;
@@ -319,7 +344,6 @@ body {
   margin: 20px 0;
 }
 
-/* ================= BACK BUTTON ================= */
 .back-btn {
   margin-top: 30px;
   padding: 10px 20px;
@@ -376,13 +400,42 @@ body {
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 18px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
     padding: 40px 20px;
   }
 
+  .hero h1 {
+    font-size: 36px;
+  }
+
   .hero-right {
     margin-top: 30px;
+  }
+
+  .skills-grid {
+    gap: 12px;
+  }
+
+  .skill-card {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .projects-section {
+    padding: 50px 20px;
   }
 }
