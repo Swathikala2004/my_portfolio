@@ -4,112 +4,161 @@ import ecommerceImg from "../assets/ecommerce.png";
 import bookingImg from "../assets/booking.png";
 
 const projects = [
+
   {
     title: "AI-First CRM System",
+
     description:
       "AI-powered CRM that converts natural language into structured HCP interaction data.",
+
     tech: ["React", "FastAPI", "LangGraph", "LLM"],
-    github: "https://github.com/Swathikala2004/hcp-crm-ai",
-    live: "https://hcp-crm-ai.netlify.app",
+
+    github:
+      "https://github.com/Swathikala2004/hcp-crm-ai",
+
+    live:
+      "https://hcp-crm-ai.netlify.app",
+
     image: crmImg,
+
     details: `
-🚀 Built an AI-First CRM System for Healthcare Interactions
+🚀 AI-First CRM System
 
-• Conversational chat interface (ChatGPT-style)
-• Converts natural language → structured CRM data
+Built an AI-powered CRM platform for healthcare interactions.
+
+🔹 Features:
+• Conversational chat interface
+• AI-generated CRM data
 • Auto-filled interaction forms
-• AI-suggested follow-up actions
-• Hybrid workflow (manual + AI)
+• AI follow-up suggestions
 
-💻 Tech Stack:
-React, FastAPI, LangGraph, Groq LLM, SQL
+🛠 Tech Stack:
+React.js, FastAPI, LangGraph, Groq LLM, SQL
 
-🧠 Impact:
-Reduces manual data entry and improves productivity.
-    `,
+🌐 Deployment:
+Netlify & Render
+`,
   },
 
   {
     title: "Device Booking System",
+
     description:
       "Centralized system for managing device reservations without conflicts.",
-    tech: ["React", "Python", "MongoDB", "Node.js" , "Express.js"],
+
+    tech: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB"
+    ],
+
     github:
       "https://github.com/Swathikala2004/device-booking-system",
+
     live:
-      
       "https://device-booking-system-7db1.vercel.app/",
+
     image: bookingImg,
+
     details: `
 🚀 Internal Device Booking System
 
-🔹 Problem:
-Shared devices caused scheduling conflicts across teams.
-c:\Users\eediga vinod kumar\OneDrive\Pictures\Screenshots\Booking1.png.pngc:\Users\eediga vinod kumar\OneDrive\Pictures\Screenshots\Booking1.png.png
-🔹 Solution:
-Built centralized booking platform with timezone handling.
+Built a centralized platform to manage shared device reservations efficiently.
 
-⚙️ Features:
+🔹 Features:
 • Conflict-free booking
-• Timezone (UTC) management
-• User booking limits
+• Timezone support
 • Admin controls
+• Booking limits
 
-💻 Tech Stack:
-  node.js,Express.js, MongoDB, React
+🛠 Tech Stack:
+React.js, Node.js, Express.js, MongoDB
 
-🧠 Impact:
-Improved team efficiency and avoided booking clashes.
-    `,
+🌐 Deployment:
+Render & Vercel
+`,
   },
 
   {
     title: "Pipeline Builder (VectorShift)",
+
     description:
       "Dynamic pipeline builder with node-based UI and DAG validation.",
-    tech: ["React", "FastAPI", "Graph Algorithms"],
-    github: "https://github.com/Swathikala2004/VectorShift",
-    live: "https://vectorshift1.netlify.app",
+
+    tech: [
+      "React",
+      "FastAPI",
+      "Graph Algorithms"
+    ],
+
+    github:
+      "https://github.com/Swathikala2004/VectorShift",
+
+    live:
+      "https://vectorshift1.netlify.app",
+
     image: vectorImg,
+
     details: `
 🚀 Pipeline Builder System
 
-• Drag-and-drop node-based UI
-• DAG validation system
-• Dynamic pipeline execution
+Built a dynamic workflow pipeline builder with DAG validation.
+
+🔹 Features:
+• Drag-and-drop node UI
+• DAG validation
+• Dynamic workflow execution
 • Modular architecture
 
-💻 Tech Stack:
-React, FastAPI
+🛠 Tech Stack:
+React.js, FastAPI
 
-🧠 Impact:
-Helps visualize and manage complex workflows efficiently.
-    `,
+🌐 Deployment:
+Netlify & Render
+`,
   },
 
   {
     title: "E-Commerce App",
+
     description:
       "Responsive shopping app with cart and product management.",
-    tech: ["React", "JavaScript", "CSS", "HTML"],
-    github: "https://github.com/Swathikala2004/ecommerce-react",
-    live: "https://e-commercapplication.netlify.app/",
+
+    tech: [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+
+    github:
+      "https://github.com/Swathikala2004/ecommerce-react",
+
+    live:
+      "https://e-commercapplication.netlify.app/",
+
     image: ecommerceImg,
+
     details: `
 🛒 E-Commerce Web Application
 
-• Product listing & details
-• Add to cart functionality
-• State management using React
-• Responsive UI design
+Built a responsive shopping application with cart functionality.
 
-💻 Tech Stack:
-React, JavaScript, HTML, CSS
+🔹 Features:
+• Product listing
+• Add to cart
+• Responsive UI
+• State management
 
-🧠 Impact:
-Improved understanding of UI design and state management.
-    `,
+🛠 Tech Stack:
+React.js, JavaScript, HTML, CSS
+
+🌐 Deployment:
+Netlify
+`,
   },
+
 ];
 
 export default projects;
